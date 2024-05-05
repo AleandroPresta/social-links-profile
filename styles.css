@@ -41,6 +41,12 @@ button {
     font-weight: 700;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: var(--green);
+    color: var(--off-black);
+}
+
 h2 {
     font-family: "Inter", sans-serif;
     font-weight: 600;
@@ -73,11 +79,14 @@ img {
     border-radius: 50px;
 }
 
-/*
-    FONT INFO:
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400, 600, 700
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-*/
+@media screen and (max-width: 375px) {
+
+    button {
+        width: 18em;
+    }
+
+    p {
+        font-size: 12;
+    }
+
+}
